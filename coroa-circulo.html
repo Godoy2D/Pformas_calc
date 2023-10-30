@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coroa do circulo</title>
+    <link rel="stylesheet" href="./assets/estilos.css/style.css">
+    <link rel="stylesheet" href="./assets/js/script.js">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="titulo">
+            <h2>Calculadora de Coroa do circulo</h2>
+        </div>
+
+        <br>
+        <p class="lead">Abaixo vamos calcular a coroa do circulo utilizando a fórmula: <code> (π * R²) – (π * r²) </code></p>
+        <br>
+
+        <form class="form">
+            <div class="col-1">
+                <label for="Rmaior">RaioM: </label>
+                <input type="number" id="RaioM" name="RaioM" required>
+            </div>
+            <div class="col-1">
+                <label for="Rmenor">Raiom: </label>
+                <input type="number" name="Raiom" id="Raiom" required />
+            </div>
+            <div>
+                <input type="submit" class="btnCalc" id="btnCalc" value="Calcular">
+            </div>
+        </form>
+        <div class="result">
+            <h3 id="CoroaC"></h3>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("#btnCalc").addeventlistener("click", function (event){
+
+            event.preventDefaukt();
+            let RaioM = document.querySelector("RaioM").value;
+            let Raiom = document.querySelector("Raiom").value;
+            const pi = Math.PI;
+            let resultM = Math.pow(RaioM, 2)
+            let resultm = Math.pow(Raiom, 2)
+
+            let CoroaC = c = (PI * RaioM) - (PI * Raiom);
+            
+
+        });
+    </script>
+</body>
+</html>

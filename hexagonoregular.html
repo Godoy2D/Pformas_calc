@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular hexagono regular</title>
+    <link rel="stylesheet" href="./assets/estilos.css/style.css">
+    <link rel="stylesheet" href="./assets/js/script.js">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="titulo">
+            <h2>Calculadora de Hexagono regular</h2>
+        </div>
+
+        <br>
+        <p class="lead">Abaixo vamos calcular a área do Hexagono regular utilizando a fórmula: <code> A = l²√3/4 </code></p>
+        <br>
+
+        <form class="form">
+            <div class="col-1">
+                <label for="lado">Lado: </label>
+                <input type="number" id="lado" name="lado" required>
+            </div>
+            <div>
+                <input type="submit" class="btnCalc" id="btnCalc" value="Calcular">
+            </div>
+        </form>
+        <div class="result">
+            <h3 id="resultado"></h3>
+        </div>
+    </div>
+    <script>
+        function calcularArea() {
+        var lado = parseFloat(document.getElementById("lado").value);
+        var area = 3 * Math.sqrt(3) * Math.pow(lado, 2) / 2;
+        document.getElementById("resultado").innerHTML = "Resultado: " + lado;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    padding: 15px;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.container{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.p-1{
+    display: flex;
+    padding: 4%;
+    height: 2%;
+}
+
+.projetos{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.lead{
+    text-align: center;
+    font-size: 20px;
+}
+
+.container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: auto;
+    padding: 2%;
+    width: auto;
+}
+
+
+.form{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 2%;
+    width: auto;
+    margin: 1%;
+    gap: 15px;
+}
+
+.col-1{
+    font-size: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+#btnCalc{
+    align-items: center;
+    font-size: 20px;
+    padding: 2%;
+}
+
+#resultado{
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+input{
+    font-size: 20px;
+    padding: 1%;
+}
+label{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular o circulo</title>
+    <link rel="stylesheet" href="./assets/estilos.css/style.css">
+    <link rel="stylesheet" href="./assets/js/script.js">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="titulo">
+            <h2>Calculadora de área do circulo</h2>
+        </div>
+
+        <br>
+        <p class="lead">Abaixo vamos calcular a área do circulo utilizando a fórmula: <code> (A = π r²) </code></p>
+        <br>
+
+        <form class="form">
+            <div class="col-1">
+                <input type="number" id="raio" step="any" placeholder="Digite o raio"><br><br>
+                <input type="number" id="base" name="base" required>
+            </div>
+                <input type="submit" class="btnCalc" id="btnCalc" value="Calcular">
+            <div>
+            </div>
+
+        </form>
+        <div class="result">
+            <h3 id="resultado"></h3>
+        </div>
+    </div>
+
+    <script>
+        function calcularArea() {
+            var raio = parseFloat(document.getElementById("raio").value);
+            var area = Math.PI * raio * raio;
+            document.getElementById("resultado").innerHTML = "A área do círculo é: " + area.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
